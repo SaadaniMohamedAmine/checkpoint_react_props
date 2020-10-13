@@ -1,5 +1,5 @@
 import React, { Profiler } from 'react'
-import Proptypes from "prop-types"  
+import PropTypes from "prop-types";
 
 
 const Profile=(props) => {
@@ -29,10 +29,10 @@ Profile.defaultProps={
     bio:"I am Saadani Mohamed Amine. \n I am a Full Stack JS Web Developper \n.For any question,please don't hesitate to join me at 'https//linked.in/saadaniMohamedAmine'" ,
 }
 Profile.propTypes ={
-    fullName:PropTypes.string,
-    profession:PropTypes.string,
-    bio:PropTypes.string,
-    handleName:PropTypes.func ,
+    fullName: PropTypes.string,
+    profession: PropTypes.string,
+    bio: PropTypes.string,
+    handleName: PropTypes.string,
 }
 
 export default Profile  ;
