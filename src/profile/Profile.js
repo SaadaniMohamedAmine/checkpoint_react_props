@@ -1,22 +1,23 @@
 import React, { Profiler } from 'react'
 import PropTypes from "prop-types";
+import '../App.css'
 
 
 const Profile=(props) => {
    
     return (
-        <form>
-            <div>
-    <span>Full name: {props.fullName}</span>
+        <form className="form">
+            <div className="div">
+    <span><span className="spann">Full name:  </span><span className="descr"> {props.fullName}</span></span>
             </div>
-            <div>
-    <span>Profession: {props.profession}</span>
+            <div className="div">
+    <span><span className="spann">Profession: </span> <span className="descr"> {props.profession}</span></span>
             </div>
-            <div>
-    <span>Bio: {props.bio}</span>
+            <div className="div">
+    <span><span className="spann">Bio:  </span><span className="descr"> {props.bio}</span></span>
             </div>
-            <div>
-                <button onClick={()=>{props.handleName(props.fullName)}}>Click Here !</button>
+            <div className="div">
+                <button className="btn" onClick={()=>{props.handleName(props.fullName)}}>Click Here !</button>
             </div>
             {props.children}
         </form>
